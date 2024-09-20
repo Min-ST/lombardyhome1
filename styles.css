@@ -6,36 +6,34 @@ body, h1, h2, h3, p, ul, li, blockquote {
 }
 
 body {
-    font-family: 'Helvetica Neue', sans-serif;
-    line-height: 1.7;
-    background-color: #F5F5F5; /* Light off-white background */
-    color: #333; /* Dark grey text for readability */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 .container {
-    width: 85%;
+    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Header Styles */
 header {
-    background: #2C3E50; /* Deep charcoal */
-    color: #FDFDFD; /* Off-white text */
-    padding: 20px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for premium feel */
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-size: 2em;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
@@ -43,110 +41,138 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FDFDFD; /* Off-white */
+    color: #fff;
     text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 500;
-    padding: 5px 10px;
 }
 
 nav ul li a:hover {
-    background: #F39C12; /* Soft gold hover effect */
-    border-radius: 5px;
+    text-decoration: underline;
 }
 
-/* Hero Section */
+/* Homepage Styles */
 .hero {
-    background: #34495E; /* Muted blue-grey */
-    padding: 80px 0;
+    background: #2c3e50;
+    padding: 50px 0;
     text-align: center;
-    color: #FDFDFD; /* Off-white text */
+    color: #fff;
 }
 
 .hero h2 {
-    font-size: 3em; /* Increase font size */
-    font-weight: 500; /* Make the font bolder */
-    color: #FDFDFD; /* Ensure the text color is a bright white for contrast */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for more visibility */
+    font-size: 3em;
+    font-weight: 700;
+    color: #FDFDFD;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
-    font-size: 1.3em;
-    margin-bottom: 30px;
+    font-size: 1.2em;
 }
 
 .btn {
     display: inline-block;
-    padding: 15px 30px;
-    color: #FDFDFD; /* Off-white */
-    background: #F39C12; /* Soft gold */
+    padding: 10px 20px;
+    color: #fff;
+    background: #2980b9;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.1em;
+    margin-top: 20px;
 }
 
 .btn:hover {
-    background: #E67E22; /* Slightly darker gold */
+    background: #3498db;
 }
 
-/* Section Styles */
+/* Sections Styles */
 section {
-    padding: 60px 0;
-    background-color: #F5F5F5; /* Light off-white background */
+    padding: 50px 0;
 }
 
 h2 {
-    font-size: 2.2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
-    color: #2C3E50; /* Deep charcoal */
 }
 
 h3 {
     font-size: 1.8em;
-    margin-top: 30px;
-    color: #2C3E50; /* Deep charcoal */
-}
-
-ul {
     margin-top: 20px;
 }
 
+ul {
+    margin-top: 10px;
+}
+
 ul li {
-    margin-bottom: 15px;
-    font-size: 1.1em;
+    margin-bottom: 10px;
 }
 
 blockquote {
-    margin: 30px 0;
-    padding: 15px;
-    background: #ECF0F1; /* Soft light grey background */
-    border-left: 5px solid #F39C12; /* Soft gold border */
-    font-style: italic;
-    color: #555; /* Darker grey for the quote */
+    margin: 20px 0;
+    padding: 10px;
+    background: #ecf0f1;
+    border-left: 5px solid #333;
 }
 
 /* Footer Styles */
 footer {
-    background: #2C3E50; /* Deep charcoal */
-    color: #FDFDFD; /* Off-white text */
-    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
-    font-size: 1em;
 }
 
 footer ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 25px;
-    padding: 10px 0;
+    gap: 15px;
 }
 
 footer ul li a {
-    color: #FDFDFD;
+    color: #fff;
     text-decoration: none;
 }
 
 footer ul li a:hover {
-    color: #F39C12; /* Soft gold on hover */
+    text-decoration: underline;
+}
+
+/* Responsive Design for Phones */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    section h3 {
+        font-size: 1.4em;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 1em;
+    }
+
+    footer ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
