@@ -1,0 +1,152 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, blockquote {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.7;
+    background-color: #F5F5F5; /* Light off-white background */
+    color: #333; /* Dark grey text for readability */
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background: #2C3E50; /* Deep charcoal */
+    color: #FDFDFD; /* Off-white text */
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for premium feel */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #FDFDFD; /* Off-white */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background: #F39C12; /* Soft gold hover effect */
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: #34495E; /* Muted blue-grey */
+    padding: 80px 0;
+    text-align: center;
+    color: #FDFDFD; /* Off-white text */
+}
+
+.hero h2 {
+    font-size: 3em; /* Increase font size */
+    font-weight: 500; /* Make the font bolder */
+    color: #FDFDFD; /* Ensure the text color is a bright white for contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for more visibility */
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #FDFDFD; /* Off-white */
+    background: #F39C12; /* Soft gold */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.btn:hover {
+    background: #E67E22; /* Slightly darker gold */
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+    background-color: #F5F5F5; /* Light off-white background */
+}
+
+h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #2C3E50; /* Deep charcoal */
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-top: 30px;
+    color: #2C3E50; /* Deep charcoal */
+}
+
+ul {
+    margin-top: 20px;
+}
+
+ul li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+blockquote {
+    margin: 30px 0;
+    padding: 15px;
+    background: #ECF0F1; /* Soft light grey background */
+    border-left: 5px solid #F39C12; /* Soft gold border */
+    font-style: italic;
+    color: #555; /* Darker grey for the quote */
+}
+
+/* Footer Styles */
+footer {
+    background: #2C3E50; /* Deep charcoal */
+    color: #FDFDFD; /* Off-white text */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1em;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px 0;
+}
+
+footer ul li a {
+    color: #FDFDFD;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #F39C12; /* Soft gold on hover */
+}
